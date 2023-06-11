@@ -16,4 +16,5 @@ def image_search(dir_path, ext):
 
 
 if __name__ == "__main__":
-    image_search(r"C:\Users\Asus\Desktop\test", ['.jpg', '.png'])
+    testPath = os.path.join(os.getcwd(), "test_search_data")
+    image_search(testPath, ['.jpg', '.png'])
