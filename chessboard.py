@@ -5,7 +5,8 @@ import math
 from image_search import image_search
 
 current_dir = os.getcwd()
-image_paths = image_search(current_dir, [".jpg", ".png"])
+img_dir = os.path.join(current_dir, "test_data_chess")
+image_paths = image_search(img_dir, [".jpg", ".png"])
 
 for image_path in image_paths:
     img = cv2.imread(image_path)
