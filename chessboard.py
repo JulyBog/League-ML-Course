@@ -40,8 +40,7 @@ for image_path in image_paths:
             ] *=0        
         
  
-    cv2.imshow(image_name, img)
-    cv2.waitKey(-1)
-
-
-
+    # Ya ebal QT
+    cv2.imwrite(os.path.join(os.getcwd(), "out_img", image_name), img)
+    # cv2.imshow(image_name, img)
+    # cv2.waitKey(-1)
