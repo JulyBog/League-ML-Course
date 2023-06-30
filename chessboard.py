@@ -4,7 +4,7 @@ import math
 
 from image_search import image_search
 
-current_dir = os.getcwd()
+current_dir = os.path.join(os.getcwd(), 'testdata')
 image_paths = image_search(current_dir, [".jpg", ".png"])
 
 for image_path in image_paths:

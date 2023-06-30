@@ -1,5 +1,4 @@
 import os
-import cv2
 
 def image_search(dir_path, ext):
     image_paths=[]
